@@ -36,13 +36,13 @@ class ProductManager {
 
 		//Validación del ingreso de parametros
         if(!title || !description || !price || !thumbnail || !code  || !stock){
-            console.error ("El producto no se agrega porque faltan datos")
+            console.error ("El producto no fue agregado, completar todos los datos")
             return
         }
 
 		//Validación del code ingresado
 		if (this.products.find((element) => element.code === code)) {
-			console.error('El productos ya existe');
+			console.error(`El producto con code ${code} ya existe`);
             return;
 		}
 		//Se agrega  el producto al array
@@ -63,6 +63,6 @@ console.log(productManager.getProducts());
 productManager.addProducts('Camisa','Talla XL', 90, 'http://www.tq.com/cam1.jpg', '001', 20 );
 productManager.addProducts('Camisa','Talla Xs', 80, 'http://www.tq.com/cam2.jpg', '002', 50 );
 productManager.addProducts('Camisa','Talla M', 85, 'http://www.tq.com/cam3.jpg', '003', 23 );
-productManager.addProducts('Talla M', 700 , 'http://www.coderimages.com/shakira.jpg', '003', 23 );
+productManager.addProducts('Camisa', 'Talla S', 700 , 'http://www.tq.com/cam4.jpg', '003', 18 );
 //console.log(productManager.getProducts());
 console.log(productManager.getProductsById(1)) 
