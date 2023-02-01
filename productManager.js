@@ -29,9 +29,6 @@ class ProductManager {
 		}		
 	}
 		
-		
-	
-	
 	/* Función que permite agregar productos validando que se ingresen todos los parametros 
 	y que no se encuentre un code repetido */
 	addProducts = ( title, description, price, thumbnail, code, stock) => {
@@ -43,7 +40,6 @@ class ProductManager {
             console.error ("El producto no fue agregado, completar todos los datos")
             return
         }
-
 		//Validación del code ingresado
 		if (products.find((element) => element.code === code)) {
 			console.error(`El producto con code ${code} ya existe`);
@@ -53,7 +49,6 @@ class ProductManager {
 		products.push({id, title, description, price, thumbnail, code,stock,});
 		fs.writeFileSync(this.path, JSON.stringify(products, null, 2))
 	};
-
 		/* Funcion que permite obtener todos los productos */
 	getProducts = () => {
 		return fs.readFileSync(this.path, 'utf-8')
@@ -66,23 +61,16 @@ class ProductManager {
 		products = products.filter((identify) => identify.id !== id)
 		fs.writeFileSync(this.path, JSON.stringify(products, null, 2))
 	}
-
-		/* updateProduct = (id , stockN) => {
-			let products = fs.readFileSync(this.path, 'utf-8');
-			let product = JSON.parse(products);
-			
-			let productC = product.find((p) => p.id === id)
-				productC.stock = stockN;
-				return fs.writeFileSync(this.path, JSON.stringify(product))
-			}  */
-			
+	/* Función que permite actualizar un producto de acuerdo al Id ingresado */
+	updateProduct = (id , productA) => {
+		let products = fs.readFileSync(this.path, 'utf-8');
+		let product = JSON.parse(products);
+		let productI = product.findIndex((p) => p.id === id);
+		product[productI] = {...product[productI], ...productA}
+		fs.writeFileSync(this.path, JSON.stringify(product, null, 2))
+		}  
 		
-		 
 	} 
-
-	
-	 
-
 
 const productManager = new ProductManager('products.json');
 productManager.addProducts('Camisa','Talla XL', 90, 'http://www.tq.com/cam1.jpg', '001', 20 );
@@ -90,12 +78,14 @@ productManager.addProducts('Camisa','Talla Xs', 80, 'http://www.tq.com/cam2.jpg'
 productManager.addProducts('Camisa','Talla M', 85, 'http://www.tq.com/cam3.jpg', '003', 23 );
 productManager.addProducts('Camisa','Talla LM', 85, 'http://www.tq.com/cam3.jpg', '004', 24 );
 productManager.addProducts('Camisa', 'Talla S', 700 , 'http://www.tq.com/cam4.jpg', '003', 18 ); 
-//console.log(productManager.getProducts());
-/* console.log(productManager.getProductsById(2)); */
+console.log(productManager.getProductsById(2)); 
 /* console.log(productManager.deleteProducts(2));  */
-/* console.log(productManager.getProducts()); */
-/* console.log(productManager.updateProduct(1, 5)); */
-
 console.log(productManager.getProducts()); 
-console.log(productManager.deleteProducts(1));
+/* console.log(productManager.deleteProducts(1));*/
+console.log(productManager.updateProduct(2, {"title": "Camisa",
+"description": "Talla XL",
+"price": 90,
+"thumbnail": "http://www.tq.com/cam1.jpg",
+"code": "006",
+"stock": 20})) 
 console.log(productManager.getProducts()); 

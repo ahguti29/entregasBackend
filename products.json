@@ -1,12 +1,21 @@
 [
   {
+    "id": 1,
+    "title": "Camisa",
+    "description": "Talla XL",
+    "price": 90,
+    "thumbnail": "http://www.tq.com/cam1.jpg",
+    "code": "001",
+    "stock": 20
+  },
+  {
     "id": 2,
     "title": "Camisa",
-    "description": "Talla Xs",
-    "price": 80,
-    "thumbnail": "http://www.tq.com/cam2.jpg",
-    "code": "002",
-    "stock": 50
+    "description": "Talla XL",
+    "price": 90,
+    "thumbnail": "http://www.tq.com/cam1.jpg",
+    "code": "006",
+    "stock": 20
   },
   {
     "id": 3,
