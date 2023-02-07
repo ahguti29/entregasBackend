@@ -10,16 +10,16 @@
   },
   {
     "id": 2,
-    "title": "Camisa",
-    "description": "Talla XL",
-    "price": 90,
-    "thumbnail": "http://www.tq.com/cam1.jpg",
-    "code": "006",
-    "stock": 20
+    "title": "Pantalon",
+    "description": "Talla Xs",
+    "price": 80,
+    "thumbnail": "http://www.tq.com/cam2.jpg",
+    "code": "002",
+    "stock": 50
   },
   {
     "id": 3,
-    "title": "Camisa",
+    "title": "Camiseta",
     "description": "Talla M",
     "price": 85,
     "thumbnail": "http://www.tq.com/cam3.jpg",
@@ -28,11 +28,65 @@
   },
   {
     "id": 4,
-    "title": "Camisa",
+    "title": "Correa",
     "description": "Talla LM",
     "price": 85,
     "thumbnail": "http://www.tq.com/cam3.jpg",
     "code": "004",
     "stock": 24
+  },
+  {
+    "id": 5,
+    "title": "Camisa",
+    "description": "Talla S",
+    "price": 700,
+    "thumbnail": "http://www.tq.com/cam4.jpg",
+    "code": "005",
+    "stock": 18
+  },
+  {
+    "id": 6,
+    "title": "Blusa",
+    "description": "Talla XL",
+    "price": 90,
+    "thumbnail": "http://www.tq.com/cam1.jpg",
+    "code": "006",
+    "stock": 20
+  },
+  {
+    "id": 7,
+    "title": "Pantalon",
+    "description": "Talla Xs",
+    "price": 80,
+    "thumbnail": "http://www.tq.com/cam2.jpg",
+    "code": "007",
+    "stock": 50
+  },
+  {
+    "id": 8,
+    "title": "Camisa",
+    "description": "Talla M",
+    "price": 85,
+    "thumbnail": "http://www.tq.com/cam3.jpg",
+    "code": "008",
+    "stock": 23
+  },
+  {
+    "id": 9,
+    "title": "Camiseta",
+    "description": "Talla LM",
+    "price": 85,
+    "thumbnail": "http://www.tq.com/cam3.jpg",
+    "code": "009",
+    "stock": 24
+  },
+  {
+    "id": 10,
+    "title": "Correa",
+    "description": "Talla S",
+    "price": 700,
+    "thumbnail": "http://www.tq.com/cam4.jpg",
+    "code": "010",
+    "stock": 18
   }
 ]

@@ -1,0 +1,24 @@
+{
+  "name": "desafio1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahguti29/entregasBackend.git"
+  },
+  "keywords": [],
+  "author": "Alvaro Huertas Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahguti29/entregasBackend/issues"
+  },
+  "homepage": "https://github.com/ahguti29/entregasBackend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

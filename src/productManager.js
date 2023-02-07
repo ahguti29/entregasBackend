@@ -72,20 +72,27 @@ class ProductManager {
 		
 	} 
 
-const productManager = new ProductManager('products.json');
+	module.exports = ProductManager;
+
+/* const productManager = new ProductManager('products.json');
 productManager.addProducts('Camisa','Talla XL', 90, 'http://www.tq.com/cam1.jpg', '001', 20 );
-productManager.addProducts('Camisa','Talla Xs', 80, 'http://www.tq.com/cam2.jpg', '002', 50 );
-productManager.addProducts('Camisa','Talla M', 85, 'http://www.tq.com/cam3.jpg', '003', 23 );
-productManager.addProducts('Camisa','Talla LM', 85, 'http://www.tq.com/cam3.jpg', '004', 24 );
-productManager.addProducts('Camisa', 'Talla S', 700 , 'http://www.tq.com/cam4.jpg', '003', 18 ); 
-console.log(productManager.getProductsById(2)); 
+productManager.addProducts('Pantalon','Talla Xs', 80, 'http://www.tq.com/cam2.jpg', '002', 50 );
+productManager.addProducts('Camiseta','Talla M', 85, 'http://www.tq.com/cam3.jpg', '003', 23 );
+productManager.addProducts('Correa','Talla LM', 85, 'http://www.tq.com/cam3.jpg', '004', 24 );
+productManager.addProducts('Camisa', 'Talla S', 700 , 'http://www.tq.com/cam4.jpg', '005', 18 ); 
+productManager.addProducts('Blusa','Talla XL', 90, 'http://www.tq.com/cam1.jpg', '006', 20 );
+productManager.addProducts('Pantalon','Talla Xs', 80, 'http://www.tq.com/cam2.jpg', '007', 50 );
+productManager.addProducts('Camisa','Talla M', 85, 'http://www.tq.com/cam3.jpg', '008', 23 );
+productManager.addProducts('Camiseta','Talla LM', 85, 'http://www.tq.com/cam3.jpg', '009', 24 );
+productManager.addProducts('Correa', 'Talla S', 700 , 'http://www.tq.com/cam4.jpg', '010', 18 );  */
+/* console.log(productManager.getProductsById(2));  */
 /* console.log(productManager.deleteProducts(2));  */
-console.log(productManager.getProducts()); 
+/* console.log(productManager.getProducts());  */
 /* console.log(productManager.deleteProducts(1));*/
-console.log(productManager.updateProduct(2, {"title": "Camisa",
+/* console.log(productManager.updateProduct(2, {"title": "Camisa",
 "description": "Talla XL",
 "price": 90,
 "thumbnail": "http://www.tq.com/cam1.jpg",
 "code": "006",
-"stock": 20})) 
-console.log(productManager.getProducts()); 
+"stock": 20}))  */
+/* console.log(productManager.getProducts());   */
